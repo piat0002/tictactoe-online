@@ -290,7 +290,7 @@ function retirechoixbot(index){
  * @param {Number} casse 
  */
 function jeujce(casse) {
-    socketClient.emit("jeu", 'i play');
+    //socketClient.emit("jeu", 'i play');
     if(verifierSiCaseJouer(casse)) {
         changeJoueur()
         modifTableau(casse);
@@ -317,7 +317,7 @@ let socketClient = io();
  * @param {Number} casse 
  */
 function jeujcj(casse) {
-    socketClient.emit("jeu", 'i play');
+    //socketClient.emit("jeu", 'i play');
     if(verifierSiCaseJouer(casse)) {
         
         changeJoueur()
