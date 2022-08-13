@@ -1,0 +1,76 @@
+table{
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    height: 6em;
+    text-align: center;
+    border-collapse: collapse;
+    color: transparent;
+    margin-bottom: 40px;
+}
+
+tr{
+    cursor: pointer;
+}
+td{
+    width: 2em;
+    height: 2em;
+
+}
+
+td:not(:first-child) {
+    border-left: 1px solid black;
+}
+
+tr:not(:last-child){
+    border-bottom:1px solid black;
+}
+
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-bottom: 40px;
+  }
+  
+   
+button:first-child {background-color: #0000ff}
+  
+button:not(:first-child) {background-color: #ff0000}
+
+button:first-child:hover {background-color: #09006b}
+  
+button:not(:first-child):hover {background-color: #810000}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+div.c{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%
+}
+
+div.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%
+}
+div#affichageissue{
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    font-size: 60px;
+}
