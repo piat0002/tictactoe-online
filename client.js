@@ -290,6 +290,7 @@ function retirechoixbot(index){
  * @param {Number} casse 
  */
 function jeujce(casse) {
+    socketClient.emit("jeu", 'i play');
     if(verifierSiCaseJouer(casse)) {
         changeJoueur()
         modifTableau(casse);
@@ -309,12 +310,14 @@ function jeujce(casse) {
     }
 }
 
+let socketClient = io();
+
 /**
  * fonction de jeu en mode joueur contre joueur.
  * @param {Number} casse 
  */
 function jeujcj(casse) {
-    
+    socketClient.emit("jeu", 'i play');
     if(verifierSiCaseJouer(casse)) {
         
         changeJoueur()
@@ -332,3 +335,8 @@ function jeujcj(casse) {
         }
     } 
 }
+
+
+socketClient.on('connect', confirmation => {
+    console.log('je suis connecter')
+});

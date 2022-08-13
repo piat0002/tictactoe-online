@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>780</x>
+      <y>190</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Player
+--
+- session
+- nickname
+- icon
+--
+
++ changeicon(icon)
++ changeNickname(Nickname)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>610</x>
+      <y>250</y>
+      <w>190</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>m2=2
+m1=1</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>170</x>
+      <y>200</y>
+      <w>450</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>Game
+--
+- playerWhoPLay : int
+- cells : array of array of int
+
+--
+
+- editCell(Coordinate)
+- winCondition(Coordinate) : bool
+- checkRow(Coordinate) : bool 
+- checkCol(Coordinate) : bool
+- checkDiagno(Coordinate) : bool
+- reset()
+- checkIfcellIsPlayable(player) : bool
+- changeTurn()
+- CheckIfPlayerIsMissing()
++ surrender(joueur)
++ play(Coordinate , player):</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
