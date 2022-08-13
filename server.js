@@ -10,6 +10,9 @@ let fs = require('fs').promises;
 let socketServer = require('socket.io')(http);
 let registeredSockets = {};
 
+
+
+
 express.use('/index.css', (request, response) => {
     fs.readFile('./index.css')
       .then((content) => {
@@ -24,7 +27,6 @@ express.use('/index.css', (request, response) => {
         response.end('Page not found.');
       });
 });
-
 
 express.get('/', (request, response) => {
   fs.readFile('./index.html')
